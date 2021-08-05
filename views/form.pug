@@ -1,0 +1,13 @@
+extends layout 
+
+block content 
+  h1 New Message
+  form(action='/new' method='POST')
+    label Username
+    br
+    input(type="text" name="user" placeholder="Enter User Name" required)
+    br
+    label Message
+    br
+    input(type="text" name="description" placeholder="Message" required)
+    input(type="submit" placeholder="Submit")

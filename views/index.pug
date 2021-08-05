@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  a(href="new")
+    button(type="button") Create Message
+  h1= title
+  each message in messages
+    h1= message.user
+    p= message.text
+    p= message.added
