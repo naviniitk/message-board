@@ -2,9 +2,10 @@ extends layout
 
 block content
   a(href="new")
-    button(type="button") Create Message
+    button(type="button" id="create-btn") Create Message
   h1= title
   each message in messages
-    h1= message.user
-    p= message.text
-    p= message.added
+    div.message-box
+      h1= message.user
+      p= message.text
+      p= message.added
